@@ -1,6 +1,14 @@
     // Obtém referência ao formulário de login
     var loginForm = document.getElementById('login-form');
+    function togglePasswordVisibility() {
+      var passwordInput = document.getElementById("senha");
 
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+      } else {
+        passwordInput.type = "password";
+      }
+    }
     // Adiciona um ouvinte de evento para o envio do formulário
     loginForm.addEventListener('submit', function(event) {
       event.preventDefault(); // Impede o envio do formulário
@@ -8,7 +16,7 @@
       // Obtém os valores inseridos pelo usuário
       var username = document.getElementById('username').value;
       var password = document.getElementById('password').value;
-
+        
       // Verifica as credenciais do usuário
       if (username === 'guilherme' && password === 'gatitcha1') {
         // Redireciona para o link desejado
