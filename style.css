@@ -1,16 +1,20 @@
 body {
     font-family: Arial, sans-serif;
-}
+  }
 
+
+  
 .fundo {
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     background-image: url(animesummit/wallpaper2.jpg);
     background-repeat: no-repeat;
-    background-size: cover; /* Ajusta o tamanho do fundo para cobrir toda a área */
-    background-position: center; /* Centraliza o fundo */
+    background-size: 100%; /* Ajusta a largura da imagem ao contêiner */
+    width: auto;
+    height: auto;
 }
+
 
 @keyframes fadeInAnimation {
     0% {
@@ -91,16 +95,16 @@ label {
 
 .password-toggle {
     position: absolute;
-    top: 50%;
-    right: 10px;
+    top: 37%;
+    right: 5px;
     transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    background-image: url(eye.png);
+    width: 25px;
+    height: 25px;
+    background-image: url(animesummit/eye-off.png);
     background-size: cover;
     cursor: pointer;
 }
 
 .password-toggle.show-password {
-    background-image: url(eye-off.png);
+    background-image: url(animesummit/eye.png);
 }
