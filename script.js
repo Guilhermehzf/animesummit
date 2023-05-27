@@ -25,7 +25,7 @@ loginForm.addEventListener('submit', function(event) {
   // Verifica as credenciais do usuário
   if (username === 'guilherme' && password === 'gatitcha1') {
     // Redireciona para o link desejado
-    window.location.href = 'https://www.linkedin.com/?trk=public_post_nav-header-logo';
+    window.location.href = 'https://guilhermehzf.github.io/site_cadastro/';
   } else {
     // Credenciais inválidas, exibe uma mensagem de erro ou realiza outra ação
     alert('Credenciais inválidas!');
