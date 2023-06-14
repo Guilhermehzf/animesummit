@@ -23,7 +23,7 @@ loginForm.addEventListener('submit', function(event) {
   var password = document.getElementById('password').value;
 
   // Verifica as credenciais do usuário
-  if (username === 'guilherme' && password === 'gatitcha1') {
+  if (username === 'guilherme' && password === '123456') {
     // Redireciona para o link desejado
     window.location.href = 'https://guilhermehzf.github.io/site_cadastro/';
   } else {
